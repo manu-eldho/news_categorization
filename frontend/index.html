@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>News Category Predictor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>📰 News Category Predictor</h1>
+  <div id="darkModeToggle" title="Toggle Dark Mode" onclick="toggleDarkMode()">
+  🌙
+   </div>
+
+  <textarea id="newsInput" placeholder="Paste your news article here..."></textarea><br />
+  <button onclick="classifyNews()"> Predict Category</button>
+  <p id="loading" style="display: none;">⏳ Classifying...</p>
+  <p id="result"></p>
+
+  <h3>💡 Try an Example</h3>
+  <ul>
+    <li onclick="setExample('The UN held a summit on climate change today.')">🌍 World example</li>
+    <li onclick="setExample('Lionel Messi scored a hat-trick in the Champions League.')">⚽ Sports example</li>
+    <li onclick="setExample('The stock market rallied after positive earnings reports.')">💼 Business example</li>
+    <li onclick="setExample('NASA’s new satellite is monitoring global temperatures.')">🔬 Sci/Tech example</li>
+  </ul>
+
+  <h3>🔁 Prediction History</h3>
+  <ul id="history"></ul>
+  <button onclick="clearPredictionHistory()"> Clear History</button>
+
+  <footer>Practice AI Projects | 2025</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

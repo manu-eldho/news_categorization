@@ -1,0 +1,127 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0 auto;          /* Center horizontally */
+  padding: 20px;
+  max-width: 800px;
+  background: #f4f6f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#result, #loading {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+  cursor: pointer;
+  background-color: #ecf0f1;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+li:hover {
+  background-color: #d0e4f7;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+body.dark-mode textarea {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+body.dark-mode button {
+  background-color: #555;
+  color: #ddd;
+}
+
+body.dark-mode button:hover {
+  background-color: #777;
+}
+
+body.dark-mode li {
+  background-color: #333;
+}
+
+body.dark-mode li:hover {
+  background-color: #444;
+}
+
+body.dark-mode footer {
+  color: #aaa;
+}
+
+/* Dark mode toggle icon */
+#darkModeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.3s ease;
+  /* subtle shadow for visibility */
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+#darkModeToggle:hover {
+  transform: scale(1.2);
+}
+
+/* Change icon color in dark mode */
+body.dark-mode #darkModeToggle {
+  color: #ffd700; /* golden color in dark mode */
+}
+
+body, textarea, button, li, footer {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
